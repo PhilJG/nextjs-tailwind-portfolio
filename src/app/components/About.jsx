@@ -10,7 +10,7 @@ export default function About() {
                 <h1 id="about" className="font-serif font-semibold text-4xl">Hi, I`m Phil</h1>
                 <p className="text-xl pt-10">
 
-                    I'm a 32-year-old self-taught web developer and former clean-tech founder based in Victoria BC. Beginning in
+                    I&rsquo;m a 32-year-old self-taught web developer and former clean-tech founder based in Victoria BC. Beginning in
                     March 2020 during the COVID lockdowns, I have been teaching myself how to code and have been at it ever since.
                 </p>
                 <br />
@@ -22,8 +22,8 @@ export default function About() {
                 <br />
                 <br />
                 <p className="text-xl pb-10">
-                    As I've grown as a developer, I have sought out wisdom and experience from programmers who have raised my
-                    standards for what's expected of any web application.
+                    As I&rsquo;ve grown as a developer, I have sought out wisdom and experience from programmers who have raised my
+                    standards for what&rsquo;s expected of any web application.
                 </p>
 
 

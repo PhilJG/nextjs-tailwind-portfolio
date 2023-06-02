@@ -1,12 +1,11 @@
 "use client"
 
 import Head from 'next/head'
-import Image from 'next/image'
 
 import { ThemeProvider } from 'next-themes'
 import { useTheme } from 'next-themes'
 
-import { useEffect, useContext } from 'react'
+import { useEffect } from 'react'
 
 import Navbar from './components/Navbar'
 import About from './components/About'
