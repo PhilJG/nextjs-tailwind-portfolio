@@ -1,0 +1,32 @@
+{
+    "projects": [
+        {
+            "title": "Baybayin App",
+            "description": "Created with HTML, CSS, and vanilla Javascript. New letters appear in a popup and are saved in localStorage to prevent progress loss. It helps users learn baybayin, an ancient writing system in the Philippines.",
+            "projectLink": "https://philjg.github.io/baybayin/",
+            "githubLink": "https://github.com/PhilJG/baybayin",
+            "iframeSrc": "https://philjg.github.io/baybayin/"
+        },
+        {
+            "title": "React tip calculator",
+            "description": "This project was originally developed from a Frontend Mentor project with vanilla Javascript. I wanted to do a more complex web app at the time but fell short of the functionality I wanted. I returned to the project after a year and did it with React and was very happy with the final result.",
+            "projectLink": "https://stupendous-snickerdoodle-1b6341.netlify.app/",
+            "githubLink": "https://github.com/PhilJG/tip-calculator-react",
+            "iframeSrc": "https://stupendous-snickerdoodle-1b6341.netlify.app/"
+        },
+        {
+            "title": "Random advice generator",
+            "description": "I built this project to demonstrate my ability to fetch an API. I used the Advice Slip API for this purpose and the result is an app that generates a new piece of advice every time the dice is rolled.",
+            "projectLink": "https://philjg.github.io/advice-generator-app/",
+            "githubLink": "https://github.com/PhilJG/advice-generator",
+            "iframeSrc": "https://philjg.github.io/advice-generator-app/"
+        },
+        {
+            "title": "Sunnyside",
+            "description": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.",
+            "projectLink": "https://philjg.github.io/frontendmentor-sunnyside/",
+            "githubLink": "https://github.com/PhilJG/frontendmentor-sunnyside",
+            "iframeSrc": "https://philjg.github.io/frontendmentor-sunnyside/"
+        }
+    ]
+}

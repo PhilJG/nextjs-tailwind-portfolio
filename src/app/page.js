@@ -6,18 +6,43 @@ import Image from 'next/image'
 import { ThemeProvider } from 'next-themes'
 import { useTheme } from 'next-themes'
 
+import { useEffect, useContext } from 'react'
 
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import About from './components/About'
+import Portfolio from './components/portfolio/Portfolio'
+import Contact from './components/Contact'
 
-import useDarkMode from "./hooks/useDarkMode";
-// import DarkModeToggle from './components/DarkModeToggle'
-
-
+import { FaFigma, FaReact, FaSass, FaJs, FaHtml5, FaCss3 } from 'react-icons/fa'
+import { Sun, Moon } from './components/SunMoon'
 
 export default function Home() {
   const { theme, setTheme } = useTheme('light')
+
+  useEffect(() => {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setTheme('dark')
+
+    }
+
+  }, [])
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark")
+      document.documentElement.classList.remove("light")
+    } else {
+      document.documentElement.classList.remove("dark")
+      document.documentElement.classList.add("light")
+
+    }
+  }, [theme])
+
+  const handleThemeSwitch = () => {
+    setTheme(theme === "dark" ? "light" : "dark")
+  }
+
   return (
     <>
       <Head>
@@ -26,14 +51,38 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ThemeProvider attribute='className'>
-        <Navbar theme={theme} setTheme={setTheme} />
+        <Navbar />
 
-        <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>toggle</button>
+        <button onClick={handleThemeSwitch} className=' flex self-end sticky top-4 p-4 my-4 bg-cyan rounded-full
+        '>
+          {theme === 'dark' ? <Sun /> : <Moon />}
+        </button>
 
-        <main className="flex  flex-col items-center justify-between p-24 bg-white-700">
-          <About theme={theme} />
+        <main className="flex  flex-col items-center justify-between pb-24 bg-white-700 ">
+
+          <About />
+          <h1 className='text-7xl font-serif pb-10 '>My Portfolio</h1>
+          <h2 className="font-serif font-semibold text-2xl">what I'm building with</h2>
+          <div>
+            <div className="flex p-2 justify-center">
+              <FaHtml5 alt='HTML5' size={80} className='px-3' />
+              <FaFigma alt='Figma' size={70} className='px-3 self-center' />
+              <FaJs alt='Javascript' size={80} className='px-3' />
+              <FaReact alt='React' size={90} className='px-3' />
+              <FaSass alt='Sass' size={90} className='px-3' />
+              <FaCss3 alt='CSS3' size={80} className='px-3' />
+            </div>
+
+
+          </div>
+
+          <hr className='border-dark-blue w-full '>
+          </hr>
+          <Portfolio />
+
+          <Contact />
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </ThemeProvider>
     </>
   )

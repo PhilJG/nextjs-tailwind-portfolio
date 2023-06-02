@@ -1,40 +1,31 @@
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaFigma } from 'react-icons/fa';
 import Logo from './Logo.jsx'
 
-export default function Footer() {
+export default function Footer({ theme }) {
     return (
 
-        <footer className="p-4 bg-dark-blue sm:p-6 dark:bg-gray-800 flex justify-center">
-            <nav className='flex-col justify-center'>
-                <ul className='text-center'>
-                    <li>
-                        {/* <Logo /> */}
+        <footer className="p-4 bg-dark-blue sm:p-6 dark:bg-gray-900 flex justify-center mt-auto">
+            <nav className='flex-col md:flex-row justify-center'>
+                <ul className='text-center flex'>
+                    <li text-lg>
+                        <Logo />
                     </li>
 
-                    <li className='text-white'>
-                        <a href="./index.html" className="text-accent">Home</a>
+                    <li text-lg className='text-white'>
+                        <a href="#about" className="text-accent">Home</a>
                     </li>
-                    <li className='text-white'>
-                        <a href="./portfolio.html">
+                    <li text-lg className='text-white'>
+                        <a href="#portfolio">
                             Portfolio</a>
                     </li>
-                    <li className='text-white'>
-                        <a href="./contact.html" >
+                    <li text-lg className='text-white'>
+                        <a href="#contact" >
                             Contact Me</a>
                     </li>
                 </ul>
-                <ul className='flex'>
-                    <li>
-                        <a className='text-white' href="https://github.com/PhilJG">
-                            <FaGithub size={40} />
-                        </a>
-                    </li>
-                    <li>
-                        <a className='text-white' href="https://www.linkedin.com/in/phil-j-gray/">
-                            <FaLinkedin size={40} />
-                        </a>
-                    </li>
-                </ul>
+
+                <FaFigma />
+
             </nav>
         </footer>
     )
