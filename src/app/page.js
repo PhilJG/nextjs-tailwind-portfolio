@@ -9,7 +9,6 @@ import { useTheme } from 'next-themes'
 import { useEffect, useContext } from 'react'
 
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 import About from './components/About'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/Contact'
@@ -37,7 +36,7 @@ export default function Home() {
       document.documentElement.classList.add("light")
 
     }
-  }, [theme])
+  }, [theme, setTheme])
 
   const handleThemeSwitch = () => {
     setTheme(theme === "dark" ? "light" : "dark")
