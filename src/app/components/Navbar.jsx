@@ -19,8 +19,8 @@ function MobileNav({ open, setOpen, theme }) {
                 </a>
             </div>
             <div className="flex flex-col ml-4">
-                <a className="text-2xl  my-4 dark:text-white" href="/about" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
-                    About
+                <a className="text-2xl  my-4 dark:text-white" href="/#portfolio" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
+                    Portfolio
                 </a>
                 <a className="text-2xl  my-4" href="/#Contact" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
                     Contact
