@@ -22,7 +22,7 @@ function MobileNav({ open, setOpen, theme }) {
                 <a className="text-2xl  my-4 dark:text-white" href="/#portfolio" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
                     Portfolio
                 </a>
-                <a className="text-2xl  my-4" href="/#Contact" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
+                <a className="text-2xl  my-4" href="/#contact" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
                     Contact
                 </a>
             </div>
