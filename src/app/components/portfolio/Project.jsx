@@ -9,7 +9,7 @@ const Project = ({ project, frameCol }) => {
                 <div className='flex justify-between'>
                     <h1 className="font-serif font-semibold text-4xl py-3">{project.title}</h1>
                     <div className='flex items-end '>
-                        <p className='font-semibold dark:text-yellow-500 text-cyan pr-1'>Click around and try it out</p>
+                        <p className='font-semibold dark:text-yellow-500 text-cyan pr-1'>Click around to try it out</p>
                         <FaMousePointer size={20} className='pb-1 dark:fill-yellow-500 fill-cyan' />
                     </div>
                 </div>

@@ -36,9 +36,9 @@ function MobileNav({ open, setOpen, theme }) {
 export default function Navbar({ theme }) {
     const [open, setOpen] = useState(false)
 
-    const handleThemeSwitch = () => {
-        setTheme(theme === "dark" ? "light" : "dark")
-    }
+    // const handleThemeSwitch = () => {
+    //     setTheme(theme === "dark" ? "light" : "dark")
+    // }
 
     return (
         <nav className="flex space-between filter bg-transparent  pt-4 h-20 items-center">
@@ -48,10 +48,10 @@ export default function Navbar({ theme }) {
                     <Logo />
                 </a>
             </div>
-            <button onClick={handleThemeSwitch} className=' flex self-end sticky top-4 p-4 my-4 bg-cyan dark:bg-yellow-500 rounded-full drop-shadow-2xl
+            {/* <button onClick={handleThemeSwitch} className=' flex self-end sticky top-4 p-4 my-4 bg-cyan dark:bg-yellow-500 rounded-full drop-shadow-2xl
         '>
                 {theme === 'dark' ? <Sun /> : <Moon />}
-            </button>
+            </button> */}
             <div className="w-9/12 flex justify-end items-center">
 
                 <div className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden" onClick={() => {
