@@ -6,11 +6,11 @@ const Project = ({ project, frameCol }) => {
     return (
         <section className='grid lg:gap-16 gap-1 lg:grid-cols-2  sm:lg:grid-cols-1 grid-rows-1'>
             <div className={frameCol}>
-                <div className='flex'>
+                <div className='flex justify-between'>
                     <h1 className="font-serif font-semibold text-4xl py-3">{project.title}</h1>
-                    <div className='flex '>
+                    <div className='flex items-end '>
                         <p className='font-semibold dark:text-yellow-500 text-cyan pr-1'>Click around and try it out</p>
-                        <FaMousePointer size={20} className='dark:fill-yellow-500 fill-cyan' />
+                        <FaMousePointer size={20} className='pb-1 dark:fill-yellow-500 fill-cyan' />
                     </div>
                 </div>
                 <iframe src={project.iframeSrc} title={project.title} className='aspect-video w-full rounded 
