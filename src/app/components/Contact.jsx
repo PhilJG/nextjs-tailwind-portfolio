@@ -16,13 +16,13 @@ const ContactSection = () => {
                 <ul className="flex justify-end pt-4">
                     <li>
                         <a href="https://github.com/PhilJG" className=" text-dark-blue dark:text-white ">
-                            <FaGithub size={40} />
+                            <FaGithub size={40} className=' hover:fill-cyan dark:fill-white dark:hover:fill-yellow-500 fill-dark' />
                         </a>
                     </li>
 
                     <li>
                         <a href="https://www.linkedin.com/in/phil-j-gray/" className="dark:text-white text-dark-blue  hover:bg-cyan">
-                            <FaLinkedin size={40} />
+                            <FaLinkedin size={40} className=' hover:fill-cyan dark:fill-white dark:hover:fill-yellow-500 fill-dark' />
                         </a>
                     </li>
                 </ul>

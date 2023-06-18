@@ -3,9 +3,12 @@
 import { useState } from 'react'
 
 import Logo from './Logo.jsx'
+import { Moon, Sun } from './SunMoon.jsx'
+
 
 function NavLink({ to, children }) {
-    return <a href={to} className={`mx-4`}>
+    return <a href={to} className={`mx-4 hover:text-cyan dark:text-white dark:hover:text-yellow-500 text-dark'
+    className=' hover:text-cyan dark:text-white dark:hover:text-yellow-500 text-dark`}>
         {children}
     </a>
 }
@@ -15,7 +18,7 @@ function MobileNav({ open, setOpen, theme }) {
         <div className={`absolute top-0 left-0 h-screen w-screen bg-white dark:bg-black transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
             <div className={`flex items-center justify-center filter drop-shadow-md dark:bg-black h-20`}> {/*logo container*/}
                 <a className="text-xl font-semibold " href="/">
-                    <Logo theme={theme} />
+                    <Logo theme={theme} className='bg-cyan' />
                 </a>
             </div>
             <div className="flex flex-col ml-4">
@@ -31,8 +34,12 @@ function MobileNav({ open, setOpen, theme }) {
 }
 
 export default function Navbar({ theme }) {
-
     const [open, setOpen] = useState(false)
+
+    const handleThemeSwitch = () => {
+        setTheme(theme === "dark" ? "light" : "dark")
+    }
+
     return (
         <nav className="flex space-between filter bg-transparent  pt-4 h-20 items-center">
             <MobileNav open={open} setOpen={setOpen} />
@@ -41,6 +48,10 @@ export default function Navbar({ theme }) {
                     <Logo />
                 </a>
             </div>
+            <button onClick={handleThemeSwitch} className=' flex self-end sticky top-4 p-4 my-4 bg-cyan dark:bg-yellow-500 rounded-full drop-shadow-2xl
+        '>
+                {theme === 'dark' ? <Sun /> : <Moon />}
+            </button>
             <div className="w-9/12 flex justify-end items-center">
 
                 <div className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden" onClick={() => {
@@ -53,10 +64,10 @@ export default function Navbar({ theme }) {
                 </div>
 
                 <div className="hidden md:flex">
-                    <NavLink to="/#contact">
+                    <NavLink to="/#contact" >
                         Contact
                     </NavLink>
-                    <NavLink to="/#portfolio">
+                    <NavLink to="/#portfolio" >
                         Portfolio
                     </NavLink>
                 </div>
