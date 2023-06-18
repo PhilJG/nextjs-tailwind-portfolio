@@ -1,14 +1,15 @@
 "use client"
 
 import { useState } from 'react'
+import { useTheme } from 'next-themes'
 
 import Logo from './Logo.jsx'
 import { Moon, Sun } from './SunMoon.jsx'
+import { FaLightbulb } from 'react-icons/fa'
 
 
 function NavLink({ to, children }) {
-    return <a href={to} className={`mx-4 hover:text-cyan dark:text-white dark:hover:text-yellow-500 text-dark'
-    className=' hover:text-cyan dark:text-white dark:hover:text-yellow-500 text-dark`}>
+    return <a href={to} className={`mx-4 text-dark hover:text-cyan dark:text-white dark:hover:text-yellow-500 text-xl text-dark`}>
         {children}
     </a>
 }
@@ -16,7 +17,8 @@ function NavLink({ to, children }) {
 function MobileNav({ open, setOpen, theme }) {
     return (
         <div className={`absolute top-0 left-0 h-screen w-screen bg-white dark:bg-black transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
-            <div className={`flex items-center justify-center filter drop-shadow-md dark:bg-black h-20`}> {/*logo container*/}
+            <div className={`flex items-center justify-center filter drop-shadow-md dark:bg-black h-20`}>
+                {/*logo container*/}
                 <a className="text-xl font-semibold " href="/">
                     <Logo theme={theme} className='bg-cyan' />
                 </a>
@@ -33,12 +35,8 @@ function MobileNav({ open, setOpen, theme }) {
     )
 }
 
-export default function Navbar({ theme }) {
+export default function Navbar({ theme, handler }) {
     const [open, setOpen] = useState(false)
-
-    // const handleThemeSwitch = () => {
-    //     setTheme(theme === "dark" ? "light" : "dark")
-    // }
 
     return (
         <nav className="flex space-between filter bg-transparent  pt-4 h-20 items-center">
@@ -48,10 +46,10 @@ export default function Navbar({ theme }) {
                     <Logo />
                 </a>
             </div>
-            {/* <button onClick={handleThemeSwitch} className=' flex self-end sticky top-4 p-4 my-4 bg-cyan dark:bg-yellow-500 rounded-full drop-shadow-2xl
-        '>
-                {theme === 'dark' ? <Sun /> : <Moon />}
-            </button> */}
+            <button onClick={handler} className='self-center top-4 p-1 my-4 rounded-full drop-shadow-2xl'>
+                {/* <FaLightbulb size={40} className=' hover:fill-cyan dark:fill-white dark:hover:fill-yellow-500 fill-dark dark:bg-dark-toggle light:bg-light-toggle' /> */}
+                {/* {theme === 'light' ? <Sun /> : <Moon />} */}
+            </button>
             <div className="w-9/12 flex justify-end items-center">
 
                 <div className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden" onClick={() => {

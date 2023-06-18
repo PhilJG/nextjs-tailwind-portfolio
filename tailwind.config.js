@@ -31,6 +31,8 @@ module.exports = {
       backgroundImage: {
         'light-about-image': "url('/light-image-profile.webp')",
         'dark-about-image': "url('/dark-image-profile.webp')",
+        'light-toggle': "url('/moon.svg')",
+        'moon-toggle': "url('/sun.svg')",
       },
     },
   },

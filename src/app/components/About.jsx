@@ -25,9 +25,6 @@ export default function About() {
                     As I&apos;ve grown as a developer, I have sought out wisdom and experience from programmers who have raised my
                     standards for what&apos;s expected of any web application.
                 </p>
-
-
-
             </div >
         </section >
     );
