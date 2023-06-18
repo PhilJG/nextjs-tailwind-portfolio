@@ -6,9 +6,9 @@ import { SecondaryButton } from './Button';
 const ContactSection = () => {
     return (
         <section >
-            <h1 className="font-serif font-semibold text-4xl  md:text-right sm:text-left  py-3">Get in Touch</h1>
+            <h1 className="font-serif font-semibold text-4xl  md:text-right sm:text-left text-center py-3">Get in Touch</h1>
             <div className="contact__content">
-                <p className='text-lg md:text-right'>
+                <p className='text-lg text-center md:text-right'>
                     I’d love to hear about what you’re working on and how I could help.
                     <br />
                     Please do feel free to check out my online profiles below and get in touch.
