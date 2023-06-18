@@ -51,7 +51,7 @@ export default function Home() {
       <ThemeProvider attribute='className'>
         <Navbar />
 
-        <button onClick={handleThemeSwitch} className=' flex self-end sticky top-4 p-4 my-4 bg-cyan rounded-full
+        <button onClick={handleThemeSwitch} className=' flex self-end sticky top-4 p-4 my-4 bg-cyan dark:bg-yellow-500 rounded-full drop-shadow-2xl
         '>
           {theme === 'dark' ? <Sun /> : <Moon />}
         </button>

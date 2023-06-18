@@ -10,7 +10,7 @@ export function SecondaryButton({ text, type }) {
         bg-dark-blue 
         text-white  
         rounded
-        hover:bg-cyan hover:text-grayish-dark-blue  
+        hover:bg-cyan dark:hover:bg-yellow-500 hover:text-grayish-dark-blue  
         dark:hover:bg-cyan dark:hover:text-grayish-dark-blue">
             {text}
         </button>
