@@ -6,14 +6,14 @@ import { SecondaryButton } from './Button';
 const ContactSection = () => {
     return (
         <section >
-            <h1 className="font-serif font-semibold text-4xl  md:text-right text-right py-3">Get in Touch</h1>
+            <h1 className="font-serif font-semibold text-4xl  md:text-right sm:text-left  py-3">Get in Touch</h1>
             <div className="contact__content">
                 <p className='text-lg md:text-right'>
                     I’d love to hear about what you’re working on and how I could help.
                     <br />
                     Please do feel free to check out my online profiles below and get in touch.
                 </p>
-                <ul className="flex justify-end pt-4">
+                <ul className="flex justify-end lg:justify-start pt-4">
                     <li>
                         <a href="https://github.com/PhilJG" className=" text-dark-blue dark:text-white ">
                             <FaGithub size={40} className=' hover:fill-cyan dark:fill-white dark:hover:fill-yellow-500 fill-dark' />

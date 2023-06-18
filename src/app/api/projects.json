@@ -15,7 +15,7 @@
             "iframeSrc": "https://stupendous-snickerdoodle-1b6341.netlify.app/"
         },
         {
-            "title": "Random advice generator",
+            "title": "Advice generator",
             "description": "I built this project to demonstrate my ability to fetch an API. I used the Advice Slip API for this purpose and the result is an app that generates a new piece of advice every time the dice is rolled.",
             "projectLink": "https://philjg.github.io/advice-generator-app/",
             "githubLink": "https://github.com/PhilJG/advice-generator",
