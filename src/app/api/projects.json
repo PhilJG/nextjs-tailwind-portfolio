@@ -17,7 +17,7 @@
 
     {
       "title": "Animated Preview Card Component",
-      "description": "I built this project to demonstrate my ability to fetch an API. I used the Advice Slip API for this purpose and the result is an app that generates a new piece of advice every time the dice is rolled.",
+      "description": "I finished this project in around 4.5 to 5 hour sprint from start to finish with emphasis on making everything lining up as percisely with the mockup as possible. I also added css animation to the vehicle icons to make the project more dynamic.",
       "projectLink": "https://philjg.github.io/3-column-preview-card-component-with-animation/",
       "githubLink": "https://github.com/PhilJG/3-column-preview-card-component-with-animation",
       "iframeSrc": "https://philjg.github.io/3-column-preview-card-component-with-animation/"
