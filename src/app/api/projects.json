@@ -1,6 +1,5 @@
 {
   "projects": [
-    
     {
       "title": "Baybayin App",
       "description": "Created with HTML, CSS, and vanilla Javascript. New letters appear in a popup and are saved in localStorage to prevent progress loss. It helps users learn baybayin, an ancient writing system in the Philippines.",
