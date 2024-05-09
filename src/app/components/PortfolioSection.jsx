@@ -10,6 +10,7 @@ const PortfolioSection = ({ frameCol, textCol }) => {
                         textCol={textCol}
                         frameCol={frameCol}
                         project={project}
+                       
                     />
 
                 </div>
