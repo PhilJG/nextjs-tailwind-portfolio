@@ -1,5 +1,7 @@
 "use client";
 
+import Type from "./Type.jsx";
+
 export default function About() {
   return (
     <section className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 sm:grid-cols-1 gap-16 pb-20">
@@ -8,6 +10,7 @@ export default function About() {
         <h1 id="about" className="font-serif font-semibold text-4xl">
           Hi, I&apos;m Phil
         </h1>
+
         <p className="text-xl pt-10">
           I&apos;m a web developer and former clean-tech founder based in
           Victoria BC.

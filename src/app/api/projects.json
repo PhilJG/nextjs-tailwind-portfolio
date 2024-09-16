@@ -6,7 +6,8 @@
       "projectLink": "https://harebnb-react.onrender.com/",
       "githubLink": "https://github.com/PhilJG/B11G04-airbnb-react",
       "iframeSrc": "https://harebnb-react.onrender.com/",
-      "width": 2
+      "width": 1,
+      "projectImage": "../portfolio/harebnb-screenshots.png"
     },
     {
       "title": "Baybayin App",
@@ -14,7 +15,8 @@
       "projectLink": "https://philjg.github.io/baybayin/",
       "githubLink": "https://github.com/PhilJG/baybayin",
       "iframeSrc": "https://philjg.github.io/baybayin/",
-      "width": 1
+      "width": 1,
+      "projectImage": "../portfolio/baybayin-app.png"
     },
     {
       "title": "Tip calculator",
@@ -22,16 +24,17 @@
       "projectLink": "https://stupendous-snickerdoodle-1b6341.netlify.app/",
       "githubLink": "https://github.com/PhilJG/tip-calculator-react",
       "iframeSrc": "https://stupendous-snickerdoodle-1b6341.netlify.app/",
-      "width": 1
+      "width": 1,
+      "projectImage": "../portfolio/tip-calculator-screenshot.png"
     },
-
     {
       "title": "Animated Preview Card Component",
       "description": "I finished this project in around 4.5 to 5 hour sprint from start to finish with emphasis on making everything lining up as percisely with the mockup as possible. I also added css animation to the vehicle icons to make the project more dynamic.",
       "projectLink": "https://philjg.github.io/3-column-preview-card-component-with-animation/",
       "githubLink": "https://github.com/PhilJG/3-column-preview-card-component-with-animation",
       "iframeSrc": "https://philjg.github.io/3-column-preview-card-component-with-animation/",
-      "width": 1
+      "width": 1,
+      "projectImage": "../portfolio/3-column-screenshot.png"
     },
     {
       "title": "Advice generator",
@@ -39,15 +42,8 @@
       "projectLink": "https://philjg.github.io/advice-generator-app/",
       "githubLink": "https://github.com/PhilJG/advice-generator",
       "iframeSrc": "https://philjg.github.io/advice-generator-app/",
-      "width": 1
-    },
-    {
-      "title": "Sunnyside",
-      "description": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.",
-      "projectLink": "https://philjg.github.io/frontendmentor-sunnyside/",
-      "githubLink": "https://github.com/PhilJG/frontendmentor-sunnyside",
-      "iframeSrc": "https://philjg.github.io/frontendmentor-sunnyside/",
-      "width": 1
+      "width": 1,
+      "projectImage": "../portfolio/advice-screenshot.png"
     }
   ]
 }

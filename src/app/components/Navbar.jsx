@@ -6,6 +6,7 @@ import { useTheme } from "next-themes";
 import Logo from "./Logo.jsx";
 import { Moon, Sun } from "./SunMoon.jsx";
 import { FaLightbulb } from "react-icons/fa";
+import { ThemeSwitch } from "./ThemeSwitch.jsx";
 
 function NavLink({ to, children }) {
   return (
@@ -45,6 +46,7 @@ function MobileNav({ open, setOpen, theme }) {
         >
           Portfolio
         </a>
+
         <a
           className="text-2xl  my-4"
           href="/#contact"
