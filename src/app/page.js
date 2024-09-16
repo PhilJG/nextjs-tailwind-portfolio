@@ -20,6 +20,9 @@ import {
   FaHtml5,
   FaCss3,
 } from "react-icons/fa";
+
+import { SiExpress, SiPostgresql } from "react-icons/si";
+
 import { Sun, Moon } from "./components/SunMoon";
 
 export default function Home() {
@@ -54,13 +57,13 @@ export default function Home() {
       </Head>
       <ThemeProvider attribute="className">
         <Navbar handler={handleThemeSwitch} setTheme={setTheme} />
-        <button
+        {/* <button
           onClick={handleThemeSwitch}
-          className=" flex self-end sticky bottom-4 p-4 my-4 bg-cyan dark:bg-yellow-500 rounded-full drop-shadow-2xl
+          className=" flex self-center sticky top-4 p-4 my-4 bg-cyan dark:bg-yellow-500 rounded-full drop-shadow-2xl
         "
         >
           {theme === "dark" ? <Sun /> : <Moon />}
-        </button>
+        </button> */}
 
         <main className="flex  flex-col items-center justify-between pb-24 bg-white-700 ">
           <About />
@@ -76,6 +79,8 @@ export default function Home() {
               <FaReact alt="React" size={70} className="px-3" />
               <FaSass alt="Sass" size={70} className="px-3" />
               <FaCss3 alt="CSS3" size={60} className="px-3" />
+              <SiExpress alt="Express" size={60} className="px-3" />
+              <SiPostgresql alt="Postgresql" size={60} className="px-3" />
             </div>
           </div>
 
