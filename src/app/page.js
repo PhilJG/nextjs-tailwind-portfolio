@@ -19,9 +19,9 @@ import {
   FaJs,
   FaHtml5,
   FaCss3,
+  FaNodeJs,
 } from "react-icons/fa";
-
-import { SiExpress, SiPostgresql } from "react-icons/si";
+import { SiExpress, SiPostgresql, SiTailwindcss } from "react-icons/si";
 
 import { Sun, Moon } from "./components/SunMoon";
 
@@ -81,6 +81,8 @@ export default function Home() {
               <FaCss3 alt="CSS3" size={60} className="px-3" />
               <SiExpress alt="Express" size={60} className="px-3" />
               <SiPostgresql alt="Postgresql" size={60} className="px-3" />
+              <SiTailwindcss alt="Tailwind" size={60} className="px-3" />
+              <FaNodeJs alt="NodeJS" size={60} className="px-3" />
             </div>
           </div>
 

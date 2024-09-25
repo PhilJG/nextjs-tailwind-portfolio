@@ -44,9 +44,8 @@ const Project = ({ project, frameCol }) => {
             <SecondaryButton text={`View Project`} />
           </a>
           <a
-            className={`self-center  ${
-              project.projectLink === undefined ? `hidden` : "p-5"
-            }`}
+            className={`self-center p-5 
+            `}
             href={project.githubLink}
           >
             <FaGithub
