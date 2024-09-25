@@ -36,16 +36,19 @@ const Project = ({ project, frameCol }) => {
       </div>
       <div>
         <p className="text-xl sm:pt-16 pt-4">{project.description}</p>
-        <div
-          className={project.projectLink === undefined ? `block pb-5` : "flex "}
-        >
+        <div className={project.projectLink === undefined ? `block ` : "flex "}>
           <a
             href={project.projectLink}
             className={project.projectLink === undefined ? `hidden` : "block "}
           >
             <SecondaryButton text={`View Project`} />
           </a>
-          <a className="self-center pl-5 pb-5" href={project.githubLink}>
+          <a
+            className={`self-center  ${
+              project.projectLink === undefined ? `hidden` : "p-5"
+            }`}
+            href={project.githubLink}
+          >
             <FaGithub
               size={40}
               className=" hover:fill-cyan dark:fill-white dark:hover:fill-yellow-500 fill-dark"
