@@ -79,7 +79,12 @@ export default function Navbar({ theme, handler }) {
 
   return (
     <nav className="flex space-between filter bg-transparent  py- h-20 items-center">
-      <MobileNav open={open} setOpen={setOpen} />
+      <MobileNav
+        open={open}
+        setOpen={setOpen}
+        theme={theme}
+        handler={handler}
+      />
       <div className="w-3/12  items-center flex">
         <a className="text-2xl flex font-semibold " href="/">
           <Logo />
