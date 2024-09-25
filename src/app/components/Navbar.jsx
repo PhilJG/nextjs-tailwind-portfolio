@@ -65,6 +65,7 @@ function MobileNav({ open, setOpen, theme, handler }) {
         </a>
         <button
           onClick={handler}
+          theme={theme}
           className=" flex self-center sticky top-4 p-4 my-4 bg-cyan dark:bg-yellow-500 rounded-full drop-shadow-2xl
         "
         ></button>
@@ -82,7 +83,7 @@ export default function Navbar({ theme, handler }) {
       <div className="w-3/12  items-center flex">
         <a className="text-2xl flex font-semibold " href="/">
           <Logo />
-          <h1 className="text-2xl font-semibold pl-2 font-serif hover:text-cyan dark:text-white dark:hover:text-yellow-500  hover:text-cyan dark:text-white dark:hover:text-yellow-500">
+          <h1 className="text-2xl font-semibold pl-2 font-serif  hover:text-cyan dark:text-white dark:hover:text-yellow-500">
             philjgray.ca
           </h1>
         </a>
@@ -126,6 +127,7 @@ export default function Navbar({ theme, handler }) {
           <NavLink to="/#portfolio">Portfolio</NavLink>
           <button
             onClick={handler}
+            theme={theme}
             className=" flex self-center sticky top-4 p-4 my-4 bg-cyan dark:bg-yellow-500 rounded-full drop-shadow-2xl
         "
           ></button>

@@ -72,14 +72,14 @@ export default function Home() {
             what I'm building with
           </h2>
           <div>
-            <div className="flex p-2 justify-center">
+            <div className="flex  justify-center">
               <FaHtml5 alt="HTML5" size={60} className="px-3" />
               <FaFigma alt="Figma" size={50} className="px-3 self-center" />
               <FaJs alt="Javascript" size={60} className="px-3" />
               <FaReact alt="React" size={70} className="px-3" />
               <FaSass alt="Sass" size={70} className="px-3" />
             </div>
-            <div className="flex p-2 justify-center">
+            <div className="flex  justify-center">
               <FaCss3 alt="CSS3" size={60} className="px-3" />
               <SiExpress alt="Express" size={60} className="px-3" />
               <SiPostgresql alt="Postgresql" size={60} className="px-3" />
