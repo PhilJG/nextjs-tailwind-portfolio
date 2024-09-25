@@ -1,6 +1,13 @@
 {
   "projects": [
     {
+      "title": "Quickbooks to GoHighLevel CRM webhook",
+      "description": "Built for a client who wanted to have his QuickBooks details update his  CRM  Go High Level. This required me to familiarise myself with the development environment of both platforms as well as Oauth2. Whenever the user created or updated a customer in quicbooks a webhook data would be passed to the app and after running through the authentication flow and then that the a gohighlevel via workflow new customer would be created as well as a tag saying they where awitin proposal. This saved the client from entering the same information twice on both platforms.",
+      "githubLink": "https://github.com/PhilJG/quickbooks-gohighlevel-webhooks",
+      "width": 1,
+      "projectImage": "./portfolio/quickbooks-gohighlevel-img.png"
+    },
+    {
       "title": "Full stack AirBnb clone",
       "description": "In 2024 I particpated in a coding bootcamp where where I worked in a team and learned how to build a full stack application. I decided to build an AirBnb clone as my final project. The project was built with React, Node.js, Express, and SQL.",
       "projectLink": "https://harebnb-react.onrender.com/",
