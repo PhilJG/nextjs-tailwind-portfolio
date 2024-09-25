@@ -78,6 +78,8 @@ export default function Home() {
               <FaJs alt="Javascript" size={60} className="px-3" />
               <FaReact alt="React" size={70} className="px-3" />
               <FaSass alt="Sass" size={70} className="px-3" />
+            </div>
+            <div className="flex p-2 justify-center">
               <FaCss3 alt="CSS3" size={60} className="px-3" />
               <SiExpress alt="Express" size={60} className="px-3" />
               <SiPostgresql alt="Postgresql" size={60} className="px-3" />
