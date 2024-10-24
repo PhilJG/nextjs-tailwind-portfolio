@@ -22,6 +22,7 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 import { SiExpress, SiPostgresql, SiTailwindcss } from "react-icons/si";
+import { TbBrandOauth, TbBrandNextjs } from "react-icons/tb";
 
 import { Sun, Moon } from "./components/SunMoon";
 
@@ -78,6 +79,7 @@ export default function Home() {
               <FaJs alt="Javascript" size={60} className="px-3" />
               <FaReact alt="React" size={70} className="px-3" />
               <FaSass alt="Sass" size={70} className="px-3" />
+              <TbBrandNextjs alt="NextJS" size={60} className="px-3" />
             </div>
             <div className="flex  justify-center">
               <FaCss3 alt="CSS3" size={60} className="px-3" />
@@ -85,6 +87,7 @@ export default function Home() {
               <SiPostgresql alt="Postgresql" size={60} className="px-3" />
               <SiTailwindcss alt="Tailwind" size={60} className="px-3" />
               <FaNodeJs alt="NodeJS" size={60} className="px-3" />
+              <TbBrandOauth alt="Oauth" size={60} className="px-3" />
             </div>
           </div>
 

@@ -14,6 +14,27 @@ export default function RootLayout({ children }) {
   return (
     <html suppressHydrationWarning>
       <head>
+        <meta property="og:title" content="PhilJGray.ca" />
+        <meta
+          property="og:description"
+          content="A portfolio built with Next.js and Tailwind.css"
+        />
+        <meta
+          property="og:image"
+          content="../public/light-image-profile.webp"
+        />
+        <meta property="og:url" content="https://philjgray.ca" />
+        <meta property="og:type" content="website" />
+        <meta
+          name="twitter:card"
+          content="../public/light-image-profile.webp"
+        />
+        <meta name="twitter:title" content="PhilJGray.ca" />
+        <meta name="twitter:description" content="Take a look..." />
+        <meta
+          name="twitter:image"
+          content="../public/light-image-profile.webpg"
+        />
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-HNSBV33GZL"

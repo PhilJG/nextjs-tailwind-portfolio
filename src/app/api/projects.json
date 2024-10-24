@@ -5,7 +5,8 @@
       "description": "Built for a client who wanted to have his QuickBooks details update his  CRM  Go High Level. This required me to familiarise myself with the development environment of both platforms as well as Oauth2. Whenever the user created or updated a customer in quickbooks the webhook was triggered and be passed to the app and after running through the authentication flow and then the data was passed to GoHighLevel's automation workflow a new customer would then be created as well as a tag saying they where awitin proposal. This saved the client from entering the same information twice on both platforms.",
       "githubLink": "https://github.com/PhilJG/quickbooks-gohighlevel-webhooks",
       "width": 1,
-      "projectImage": "./portfolio/quickbooks-gohighlevel-img.webp"
+      "projectImage": "./portfolio/quickbooks-gohighlevel-img.webp",
+      "techStack": ["node", "javascript", "express"]
     },
     {
       "title": "Full stack AirBnb clone",
@@ -14,7 +15,17 @@
       "githubLink": "https://github.com/PhilJG/B11G04-airbnb-react",
       "iframeSrc": "https://harebnb-react.onrender.com/",
       "width": 1,
-      "projectImage": "../portfolio/harebnb-screenshots.webp"
+      "projectImage": "../portfolio/harebnb-screenshots.webp",
+      "techStack": [
+        "node",
+        "javascript",
+        "express",
+        "postgres",
+        "tailwind",
+        "react",
+        "figma",
+        "nextjs"
+      ]
     },
     {
       "title": "Baybayin App",
@@ -23,7 +34,8 @@
       "githubLink": "https://github.com/PhilJG/baybayin",
       "iframeSrc": "https://philjg.github.io/baybayin/",
       "width": 1,
-      "projectImage": "../portfolio/baybayin-screenshot.webp"
+      "projectImage": "../portfolio/baybayin-screenshot.webp",
+      "techStack": ["javascript", "html", "css"]
     },
     {
       "title": "Tip calculator",
@@ -32,7 +44,8 @@
       "githubLink": "https://github.com/PhilJG/tip-calculator-react",
       "iframeSrc": "https://stupendous-snickerdoodle-1b6341.netlify.app/",
       "width": 1,
-      "projectImage": "../portfolio/tip-calculator-screenshot.webp"
+      "projectImage": "../portfolio/tip-calculator-screenshot.webp",
+      "techStack": ["react", "javascript", "html", "css"]
     },
     {
       "title": "Animated Preview Card Component",
@@ -41,7 +54,8 @@
       "githubLink": "https://github.com/PhilJG/3-column-preview-card-component-with-animation",
       "iframeSrc": "https://philjg.github.io/3-column-preview-card-component-with-animation/",
       "width": 1,
-      "projectImage": "../portfolio/3-column-screenshot.webp"
+      "projectImage": "../portfolio/3-column-screenshot.webp",
+      "techStack": ["css", "javascript", "html"]
     },
     {
       "title": "Advice generator",
@@ -50,7 +64,8 @@
       "githubLink": "https://github.com/PhilJG/advice-generator",
       "iframeSrc": "https://philjg.github.io/advice-generator-app/",
       "width": 1,
-      "projectImage": "../portfolio/advice-screenshot.webp"
+      "projectImage": "../portfolio/advice-screenshot.webp",
+      "techStack": ["javascript", "html", "css"]
     }
   ]
 }

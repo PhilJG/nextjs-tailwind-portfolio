@@ -3,6 +3,18 @@ import React, { useEffect, useRef } from "react";
 import { SecondaryButton } from "../Button";
 import { FaGithub, FaMousePointer } from "react-icons/fa";
 
+import {
+  FaFigma,
+  FaReact,
+  FaSass,
+  FaJs,
+  FaHtml5,
+  FaCss3,
+  FaNodeJs,
+} from "react-icons/fa";
+import { SiExpress, SiPostgresql, SiTailwindcss } from "react-icons/si";
+import { TbBrandOauth, TbBrandNextjs } from "react-icons/tb";
+
 const Project = ({ project, frameCol }) => {
   return (
     <section
